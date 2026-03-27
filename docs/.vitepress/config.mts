@@ -62,7 +62,9 @@ export default defineConfig({
       { text: '库/工具/中间件', link: '/tooling' },
     ],
 
-    socialLinks: [],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/xbsheng/ai-interview-note' },
+    ],
 
     footer: {
       message: '仅供学习交流，题目与答案要点请结合业务与最新论文核对。',

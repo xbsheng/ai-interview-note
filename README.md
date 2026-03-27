@@ -1,5 +1,7 @@
 # AI 面试题笔记
 
+**源码仓库：** [github.com/xbsheng/ai-interview-note](https://github.com/xbsheng/ai-interview-note)
+
 基于 [VitePress](https://vitepress.dev/) 整理的 **NLP、大模型、机器学习、深度学习、Python、方案设计与工具链** 等知识点与面试题参考答案要点，站点为中文、支持数学公式（MathJax）与本地全文搜索。
 
 ## 环境要求
