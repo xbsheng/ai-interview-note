@@ -66,6 +66,13 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/xbsheng/ai-interview-note' },
     ],
 
+    /** 文档页底部「在 GitHub 上编辑」链接，:path 为相对 docs 的 md 路径 */
+    editLink: {
+      pattern:
+        'https://github.com/xbsheng/ai-interview-note/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页',
+    },
+
     footer: {
       message: '仅供学习交流，题目与答案要点请结合业务与最新论文核对。',
     },
