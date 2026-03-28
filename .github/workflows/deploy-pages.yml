@@ -35,6 +35,10 @@ jobs:
 
       - name: Build VitePress
         run: pnpm run build
+        env:
+          # 在仓库 Settings → Secrets and variables → Actions 中配置
+          VITE_GISCUS_REPO_ID: ${{ secrets.VITE_GISCUS_REPO_ID }}
+          VITE_GISCUS_CATEGORY_ID: ${{ secrets.VITE_GISCUS_CATEGORY_ID }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

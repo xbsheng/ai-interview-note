@@ -11,6 +11,11 @@ export default defineConfig({
 
   base: '/ai-interview-note/',
 
+  /** Vite 默认 root 为 docs，env 仅从 docs/ 加载；指向仓库根目录以读取 .env / .env.local */
+  vite: {
+    envDir: '..',
+  },
+
   markdown: {
     math: true,
   },
