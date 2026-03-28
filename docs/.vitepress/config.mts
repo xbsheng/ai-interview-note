@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+/** 与 `base` 一致，用于 head 内静态资源路径（VitePress 不会自动拼接 base） */
+const SITE_BASE = '/ai-interview-note/'
+
 /**
  * 若 GitHub 仓库名为其他名称，请同步修改 base（项目站路径为 /<repo>/）。
  * 用户站 username.github.io 根目录部署时使用 base: '/'。
@@ -9,7 +12,18 @@ export default defineConfig({
   description: 'NLP、大模型、机器学习等知识点与面试题参考答案要点',
   lang: 'zh-CN',
 
-  base: '/ai-interview-note/',
+  base: SITE_BASE,
+
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: `${SITE_BASE}favicon.svg`,
+      },
+    ],
+  ],
 
   /** Vite 默认 root 为 docs，env 仅从 docs/ 加载；指向仓库根目录以读取 .env / .env.local */
   vite: {
@@ -67,14 +81,11 @@ export default defineConfig({
       { text: '库/工具/中间件', link: '/tooling' },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/xbsheng/ai-interview-note' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/xbsheng/ai-interview-note' }],
 
     /** 文档页底部「在 GitHub 上编辑」链接，:path 为相对 docs 的 md 路径 */
     editLink: {
-      pattern:
-        'https://github.com/xbsheng/ai-interview-note/edit/main/docs/:path',
+      pattern: 'https://github.com/xbsheng/ai-interview-note/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
 

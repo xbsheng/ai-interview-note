@@ -14,6 +14,5 @@ export const giscus = {
 } as const
 
 export function isGiscusConfigured(): boolean {
-  console.log('xbs', '03-28-10-58-22', giscus.repoId, import.meta.env)
   return Boolean(giscus.repoId && giscus.categoryId)
 }

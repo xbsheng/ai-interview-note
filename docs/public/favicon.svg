@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>AI interview notes</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <path
+    fill="none"
+    stroke="#f0f4fa"
+    stroke-width="1.35"
+    stroke-linejoin="round"
+    d="M9 7h10.5l3.5 3.5V25H9z"
+  />
+  <path fill="#e8a838" d="M19.5 7v3.5H23z"/>
+  <path
+    fill="none"
+    stroke="#c8d4e8"
+    stroke-width="1"
+    stroke-linecap="round"
+    opacity="0.85"
+    d="M11.5 14h9M11.5 17.5h7M11.5 21h8"
+  />
+  <circle cx="22.5" cy="17.5" r="1.35" fill="#e8a838"/>
+  <circle cx="20" cy="21" r="0.9" fill="#e8a838" opacity="0.75"/>
+  <path
+    fill="none"
+    stroke="#e8a838"
+    stroke-width="0.75"
+    stroke-linecap="round"
+    opacity="0.6"
+    d="M21.15 18.7L20.4 20.2"
+  />
+</svg>
